@@ -1,0 +1,175 @@
+/* --- Variables de Diseño (Capital Flow Blue) --- */
+:root {
+    --primary: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --background: #f8f9fa;
+    --surface: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background: var(--surface);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.logo i {
+    font-size: 26px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+    padding: 80px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+}
+
+/* --- Botones --- */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background: var(--surface);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background: #f0f7ff;
+}
+
+/* --- Features --- */
+.features {
+    padding: 80px 0;
+    background: var(--surface);
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 48px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.feature-card {
+    background: var(--background);
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    transition: y 0.2s ease;
+}
+
+.feature-card i {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 15px;
+}
+
+/* --- Footer --- */
+.footer {
+    background: var(--text-main);
+    color: #ffffff;
+    padding: 32px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer p {
+    opacity: 0.7;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .hero-text h1 { font-size: 32px; }
+    .hero-text p { font-size: 16px; }
+    .hero { padding: 60px 0; }
+}
