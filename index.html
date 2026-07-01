@@ -6,15 +6,40 @@
     <title>Capital Flow - Control de Finanzas Inteligente</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* Estilos rápidos integrados para la nueva sección de privacidad */
+        .privacy-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e5e7eb;
+        }
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+        .privacy-content h2 { margin-bottom: 24px; color: #1f2937; font-size: 28px; }
+        .privacy-content h3 { margin-top: 24px; margin-bottom: 12px; color: #1f2937; font-size: 18px; }
+        .privacy-content p { color: #6b7280; font-size: 15px; margin-bottom: 16px; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .nav-links a { color: #6b7280; text-decoration: none; font-size: 15px; font-weight: 600; transition: color 0.2s; }
+        .nav-links a:hover { color: #3b82f6; }
+    </style>
 </head>
 <body>
 
     <header class="navbar">
-        <div class="container">
+        <div class="container nav-container">
             <div class="logo">
                 <i class="ph-bold ph-trend-up"></i>
                 <span>Capital Flow</span>
             </div>
+            <nav class="nav-links">
+                <a href="#privacidad">Política de Privacidad</a>
+            </nav>
         </div>
     </header>
 
@@ -52,6 +77,28 @@
                     <h3>Registro Inteligente</h3>
                     <p>Introduce transacciones en segundos gracias al sistema de sugerencias automáticas.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔒 SECCIÓN DE POLÍTICA DE PRIVACIDAD EXIGIDA POR APPLE -->
+    <section id="privacidad" class="privacy-section">
+        <div class="container">
+            <div class="privacy-content">
+                <h2>Política de Privacidad</h2>
+                <p>En <strong>Capital Flow</strong>, nos tomamos muy en serio la privacidad de tus datos financieros. Esta política describe cómo se maneja la información dentro de nuestra aplicación móvil disponible en la App Store.</p>
+                
+                <h3>1. Recopilación y Almacenamiento de Datos</h3>
+                <p>Capital Flow es una herramienta de uso estrictamente local. Toda la información financiera que introduces (ingresos, gastos, balances y cuentas) se almacena exclusivamente de forma interna y cifrada en la memoria de tu dispositivo móvil. No contamos con servidores externos ni bases de datos en la nube que recopilen tus registros financieros.</p>
+                
+                <h3>2. Proveedores de Servicios y Publicidad</h3>
+                <p>Para mantener la aplicación gratuita, integramos herramientas publicitarias de terceros (como Google AdMob). Estas plataformas pueden recopilar identificadores anónimos del dispositivo (como el IDFA en iOS) con el único fin de procesar, optimizar y mostrar anuncios relevantes dentro de la interfaz. Estos datos publicitarios no están vinculados de ninguna manera con tus movimientos o balances financieros personales.</p>
+                
+                <h3>3. Permisos del Dispositivo</h3>
+                <p>La aplicación puede solicitar permisos básicos del sistema operativo únicamente para optimizar el rendimiento y la interfaz del usuario. Ninguno de estos accesos compromete o extrae información privada del usuario.</p>
+                
+                <h3>4. Cambios en esta Política</h3>
+                <p>Nos reservamos el derecho de actualizar esta declaración ante futuros cambios funcionales en la aplicación. Cualquier modificación sustancial se verá reflejada en esta sección web y en la ficha de la App Store.</p>
             </div>
         </div>
     </section>
